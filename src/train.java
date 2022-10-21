@@ -20,6 +20,11 @@ public class train extends transport {
         this.numberOfWagons = numberOfWagons;
     }
 
+    @Override
+    public void refill() {
+        super.refill();
+    }
+
     public String getThePriceOfTheTrip() {
         return thePriceOfTheTrip;
     }

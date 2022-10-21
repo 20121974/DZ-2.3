@@ -15,6 +15,10 @@ public class transport {
         this.maximumMovementSpeed = maximumMovementSpeed;
     }
 
+    public void refill() {
+
+    }
+
     public transport() {
 
     }

@@ -56,6 +56,11 @@ public class Car extends transport {
         }
     }
 
+    @Override
+    public void refill() {
+        super.refill();
+    }
+
     public class key {
         private String remoteEngineStart;//удалённый запуск двигателя
         private String keylessAccess;//бесключевой доступ
