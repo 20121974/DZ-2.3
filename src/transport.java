@@ -1,10 +1,23 @@
 public class transport {
-    private String brand;//марка автомобиля
-    private String model;//модель
-    private int productionYear;//год выпуска
-    private String productionCountry;//страна-производитель
+    String brand;//марка автомобиля
+    String model;//модель
+    int productionYear;//год выпуска
+    String productionCountry;//страна-производитель
     String color;//цвет
     String maximumMovementSpeed;//максимальная скорость передвижения
+
+    public transport(String brand, String model, int productionYear, String productionCountry, String color, String maximumMovementSpeed) {
+        this.brand = brand;
+        this.model = model;
+        this.productionYear = productionYear;
+        this.productionCountry = productionCountry;
+        this.color = color;
+        this.maximumMovementSpeed = maximumMovementSpeed;
+    }
+
+    public transport() {
+
+    }
 
     public String getMaximumMovementSpeed() {
         return maximumMovementSpeed;
