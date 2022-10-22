@@ -1,5 +1,9 @@
-public class Amphibians {
+public class Amphibians extends Animals {
     private String livingEnvironment;//среда проживания
+
+    public Amphibians(String nicknameAnimal, int numberOfYears) {
+        super(nicknameAnimal, numberOfYears);
+    }
 
     public void hunt() {
     }

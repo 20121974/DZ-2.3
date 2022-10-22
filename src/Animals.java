@@ -2,6 +2,11 @@ public class Animals {
     private String nicknameAnimal;//кличка животного
     private int numberOfYears;//количество лет
 
+    public Animals(String nicknameAnimal, int numberOfYears) {
+        this.nicknameAnimal = nicknameAnimal;
+        this.numberOfYears = numberOfYears;
+    }
+
     public void eat() {
 
     }

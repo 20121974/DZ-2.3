@@ -1,6 +1,10 @@
-public class Mammals {
+public class Mammals extends  Animals {
     private String livingEnvironment;//среда проживания
     private int movementSpeed;//скорость перемещения
+
+    public Mammals(String nicknameAnimal, int numberOfYears) {
+        super(nicknameAnimal, numberOfYears);
+    }
 
     public void walk() {
     }
