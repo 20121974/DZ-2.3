@@ -1,12 +1,12 @@
-public class transport {
-    String brand;//марка автомобиля
-    String model;//модель
-    int productionYear;//год выпуска
-    String productionCountry;//страна-производитель
-    String color;//цвет
-    String maximumMovementSpeed;//максимальная скорость передвижения
+public abstract class Transport {
+    private String brand;//марка автомобиля
+    private String model;//модель
+    private int productionYear;//год выпуска
+    private String productionCountry;//страна-производитель
+    private String color;//цвет
+    private String maximumMovementSpeed;//максимальная скорость передвижения
 
-    public transport(String brand, String model, int productionYear, String productionCountry, String color, String maximumMovementSpeed) {
+    public Transport(String brand, String model, int productionYear, String productionCountry, String color, String maximumMovementSpeed) {
         this.brand = brand;
         this.model = model;
         this.productionYear = productionYear;
@@ -15,11 +15,9 @@ public class transport {
         this.maximumMovementSpeed = maximumMovementSpeed;
     }
 
-    public void refill() {
+    public abstract void refill();
 
-    }
-
-    public transport() {
+    public Transport() {
 
     }
 

@@ -1,4 +1,4 @@
-public class Car extends transport {
+public class Car extends Transport {
     public class insurance {
         private Integer insuranceValidityPeriod;//Срок действия страховки
         private String theCostOfInsurance;//Стоимость страховки
@@ -58,7 +58,8 @@ public class Car extends transport {
 
     @Override
     public void refill() {
-        super.refill();
+        System.out.println("Если вы на автомобиле, заправтесь бензином, дизелем на заправке," +
+                " или зарядите на специальных электрод-парковках электрокар");
     }
 
     public class key {
@@ -89,12 +90,12 @@ public class Car extends transport {
         }
     }
 
-    double engineVolume;//объем двигателя
-    String transmission;//коробка передач
+    private double engineVolume;//объем двигателя
+    private String transmission;//коробка передач
     private String bodyType;//тип кузова
-    String registrationNumber;//регистрационный номер
+    private String registrationNumber;//регистрационный номер
     private int numberOfSeats;//количество мест
-    String aSignOfSummerOrWinterTires;//признак летняя или зимняя резина
+    private String aSignOfSummerOrWinterTires;//признак летняя или зимняя резина
     private static insurance insurance;
 
     public Car.insurance getInsurance(int i, String s, String s1) {

@@ -1,19 +1,19 @@
-public class train extends transport {
-    String thePriceOfTheTrip;//Цена поездки
-    String travelTime;//Время поездки
-    String nameOfTheDepartureStation;//Название станции отбытия
-    String finalStop;// Конечная остановка
-    String numberOfWagons;//Количество вагонов
+public class Train extends Transport {
+    private int thePriceOfTheTrip;//Цена поездки
+    private int travelTime;//Время поездки
+    private String nameOfTheDepartureStation;//Название станции отбытия
+    private String finalStop;// Конечная остановка
+    private String numberOfWagons;//Количество вагонов
 
-    public train(String brand, String model, int productionYear, String productionCountry,String maximumMovementSpeed,
-                 String thePriceOfTheTrip, String nameOfTheDepartureStation, String finalStop,
+    public Train(String brand, String model, int productionYear, String productionCountry, String maximumMovementSpeed,
+                 int thePriceOfTheTrip, String nameOfTheDepartureStation, String finalStop,
                  String numberOfWagons) {
         super();
-        this.brand = brand;
-        this.model = model;
-        this.productionYear = productionYear;
-        this.productionCountry = productionCountry;
-        this.maximumMovementSpeed = maximumMovementSpeed;
+        brand = brand;
+        model = model;
+        productionYear = productionYear;
+        productionCountry = productionCountry;
+        maximumMovementSpeed = maximumMovementSpeed;
         this.thePriceOfTheTrip = thePriceOfTheTrip;
         this.nameOfTheDepartureStation = nameOfTheDepartureStation;
         this.finalStop = finalStop;
@@ -22,24 +22,22 @@ public class train extends transport {
 
     @Override
     public void refill() {
-        super.refill();
+        System.out.println("Заправтесь дизелем");
     }
 
-    public String getThePriceOfTheTrip() {
+    public int getThePriceOfTheTrip() {
         return thePriceOfTheTrip;
     }
 
-    public void setThePriceOfTheTrip(String thePriceOfTheTrip) {
-        if (thePriceOfTheTrip != null && !thePriceOfTheTrip.isBlank() && !thePriceOfTheTrip.isEmpty())
-        this.thePriceOfTheTrip = thePriceOfTheTrip;
+    public void setThePriceOfTheTrip(int thePriceOfTheTrip) {
+       this.thePriceOfTheTrip = thePriceOfTheTrip;
     }
 
-    public String getTravelTime() {
+    public int getTravelTime() {
         return travelTime;
     }
 
-    public void setTravelTime(String travelTime) {
-        if (travelTime != null && !travelTime.isBlank() && !travelTime.isEmpty())
+    public void setTravelTime(int travelTime) {
         this.travelTime = travelTime;
     }
 
