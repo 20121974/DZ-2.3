@@ -9,12 +9,12 @@ public class Predators extends Mammals {
 
     @Override
     public void go() {
-        super.go();
+        System.out.println("Охоться");
     }
 
     @Override
     public void eat() {
-        super.eat();
+        System.out.println("Ешь мясо");
     }
 
     @Override
@@ -31,6 +31,7 @@ public class Predators extends Mammals {
     }
 
     public void hunting() {
+        System.out.println("Иди на охоту");
     }
 
     public String getTypeOfFood() {
@@ -38,7 +39,7 @@ public class Predators extends Mammals {
     }
 
     public void setTypeOfFood(String typeOfFood) {
-        if (typeOfFood != null && !typeOfFood.isBlank() && !typeOfFood.isEmpty())
-            this.typeOfFood = typeOfFood;
+        if (typeOfFood != null && !typeOfFood.isBlank() && !typeOfFood.isEmpty()){
+            this.typeOfFood = typeOfFood;}
     }
 }

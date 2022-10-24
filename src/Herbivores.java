@@ -9,16 +9,17 @@ public class Herbivores extends Mammals {
     }
 
     public void graze() {
+        System.out.println("Выпас");
     }
 
     @Override
     public void go() {
-        super.go();
+        System.out.println("Пасись");
     }
 
     @Override
     public void eat() {
-        super.eat();
+        System.out.println("Ешь траву");
     }
 
     @Override
@@ -39,7 +40,7 @@ public class Herbivores extends Mammals {
     }
 
     public void setTypeOfFood(String typeOfFood) {
-        if (typeOfFood != null && !typeOfFood.isBlank() && !typeOfFood.isEmpty())
-        this.typeOfFood = typeOfFood;
+        if (typeOfFood != null && !typeOfFood.isBlank() && !typeOfFood.isEmpty()){
+        this.typeOfFood = typeOfFood;}
     }
 }

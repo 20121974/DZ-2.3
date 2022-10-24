@@ -1,12 +1,38 @@
-public class Mammals extends  Animals {
+import java.util.Objects;
+
+public class Mammals extends Animal {
     private String livingEnvironment;//среда проживания
     private int movementSpeed;//скорость перемещения
 
     public Mammals(String nicknameAnimal, int numberOfYears) {
         super(nicknameAnimal, numberOfYears);
     }
+    @Override
+    public void eat() {
+    }
+    @Override
+    public void sleep() {
+
+    }
+    @Override
+    public void go() {
+
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Mammals mammals = (Mammals) o;
+        return movementSpeed == mammals.movementSpeed && livingEnvironment.equals(mammals.livingEnvironment);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), livingEnvironment, movementSpeed);
+    }
 
     public void walk() {
+        System.out.println("Гуляй");
     }
 
     public String getLivingEnvironment() {
@@ -23,7 +49,7 @@ public class Mammals extends  Animals {
     }
 
     public void setMovementSpeed(int movementSpeed) {
-        if (movementSpeed > 0)
-        this.movementSpeed = movementSpeed;
+        if (movementSpeed > 0){
+        this.movementSpeed = movementSpeed;}
     }
 }

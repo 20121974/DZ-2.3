@@ -6,18 +6,17 @@ public class Flying extends Birds{
         super(nicknameAnimal, numberOfYears);
     }
     public void toFly() {
+        System.out.println("Летай");
     }
-
     @Override
     public void go() {
-        super.go();
+        System.out.println("Ходить");
     }
 
     @Override
     public void eat() {
-        super.eat();
+        System.out.println("Ешь грызунов и личинки");
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -25,18 +24,16 @@ public class Flying extends Birds{
         Flying flying = (Flying) o;
         return typeOfMovement.equals(flying.typeOfMovement);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(typeOfMovement);
     }
-
     public String getTypeOfMovement() {
         return typeOfMovement;
     }
 
     public void setTypeOfMovement(String typeOfMovement) {
-        if (typeOfMovement != null && !typeOfMovement.isBlank() && !typeOfMovement.isEmpty())
-            this.typeOfMovement = typeOfMovement;
+        if (typeOfMovement != null && !typeOfMovement.isBlank() && !typeOfMovement.isEmpty()){
+            this.typeOfMovement = typeOfMovement;}
     }
 }
